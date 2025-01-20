@@ -1,0 +1,125 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}E-Portfolio{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+
+    .custom-button {
+    padding: 10px 20px;
+    background-color:rgb(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+
+<!--Contenu-->
+<head>
+    <br>
+    <div class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Administrer les Réseaux et l'Internet</strong></div>
+        <div>
+            <p>Comprendre les principes et standards du codage de l'information</p>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <a href="https://docs.google.com/document/d/1pWCdvPrlK8zjeVEnkwk7x1xGYewXe3vkFZAil6rgCDU/edit?usp=sharing" target="_blank" class="btn btn-primary">
+                <i class="fas fa-link"></i>
+            </a>
+            <p>Configurer les fonctions de base du réseau LAN</p>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <a href="https://docs.google.com/document/d/1KcenxYlUNtVnnJCsoETo-zpANFMr8Psm3sB8st-mL50/edit?usp=sharing" target="_blank" class="btn btn-primary">
+                <i class="fas fa-link"></i>
+            </a>
+            <p>Installer un poste client</p>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <a href="https://docs.google.com/document/d/1MiEs6sG6SsR6UAq5QX-ijoDve7gW79Ht2E1S9NVp0RI/edit?usp=sharing" target="_blank" class="btn btn-primary">
+                <i class="fas fa-link"></i>
+            </a>            
+            <br>
+        </div>
+    </div>
+
+    <Bloc2 class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Connecter les Entreprises et les Usagers</strong></div>
+        <div>
+            <p>Déployer des supports de transmission</p>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <a href="https://docs.google.com/document/d/1y5L_za7AWZRWdteZ_BzKBG8caMqtTGw0uBgckWWbpbg/edit?usp=sharing" target="_blank" class="btn btn-primary">
+                <i class="fas fa-link"></i>
+            </a>               
+            <br>
+        </div>
+    </Bloc2>
+
+    <Bloc3 class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Créer des Outils et Application Informatique pour les Réseaux & Télécommunication</strong></div>
+        <div>
+            <p>Utilisation un système informatique et de ses outils</p>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <a href="https://docs.google.com/document/d/1S1CYAlJrsa1AL681dF1Wwjx780n9p5UFGie6_w1c06k/edit?usp=sharing" target="_blank" class="btn btn-primary">
+                <i class="fas fa-link"></i>
+            </a>   
+            <p>Programmer, lire, corriger un programme</p>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <a href="https://docs.google.com/document/d/1u1ffHd3EU_a01tYt3dzyRavwI4B1SiD83S9D_sIZgzc/edit?usp=sharing" target="_blank" class="btn btn-primary">
+                <i class="fas fa-link"></i>
+            </a>   
+            <p>Connaître l'architecture et les technologies d'un site Web</p>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <a href="https://docs.google.com/document/d/1Q8pWpdHDOSoLGADbMabcKe100EhVMk-YpMrwyYPealg/edit?usp=sharing" target="_blank" class="btn btn-primary">
+                <i class="fas fa-link"></i>
+            </a>              
+            <br>
+        </div>
+    </Bloc3>
+    
+    <br>
+</head>
+<script>
+    function showDocument(docId) {
+        // Rendre invisible tous les documents
+        document.querySelectorAll('.pdf-container').forEach(doc => {
+            doc.classList.remove('active');
+        });
+
+        // Afficher uniquement le document sélectionné
+        const selectedDoc = document.getElementById(docId);
+        if (selectedDoc) {
+            selectedDoc.classList.add('active');
+        }
+    }
+
+    // Afficher le premier document par défaut au chargement
+    window.onload = function() {
+        showDocument('doc1');
+    };
+</script>
+<footer class="bg-dark text-white text-center py-3">
+    <div class="d-flex justify-content-center">
+        <p>&copy; 2025 Kelis Iloduba. All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}

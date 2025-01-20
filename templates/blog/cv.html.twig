@@ -1,0 +1,139 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon CV{% endblock %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Kelis Iloduba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            margin: 1rem 0;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+        .info, .skills, .languages {
+            display: flex;
+            justify-content: space-between;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kelis Iloduba</h1>
+        <p>Étudiant en Réseaux et Télécommunications</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>Coordonnées</h2>
+            <p>15 bis Rue de Fontenille, 42300, Roanne</p>
+            <p>Téléphone : 06 95 53 88 91</p>
+            <p>Email : kelis.iloduba@etu.univ-st-etienne.fr</p>
+            <p>Date de naissance : 24 avril 2006 (18 ans)</p>
+            <p>Nationalité : Français</p>
+        </section>
+        
+        <section>
+            <h2>Profil</h2>
+            <p>Autonome et enthousiaste, mes premières expériences m'ont permis de renforcer mes acquis et d'appréhender les différents outils et techniques en réseaux et télécommunications. En quête de nouveaux challenges, je souhaite rejoindre une organisation à laquelle je pourrais apporter mon dynamisme et mon goût du challenge.</p>
+        </section>
+
+        <section>
+            <h2>Compétences</h2>
+            <ul>
+                <li>Esprit d'équipe</li>
+                <li>Goût du défi</li>
+                <li>Réseautage efficace</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Centres d'intérêt</h2>
+            <ul>
+                <li>Passion pour le basket</li>
+                <li>Passion pour l'informatique</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Langues</h2>
+            <div class="languages">
+                <p>Français : Langue maternelle</p>
+                <p>Anglais : Intermédiaire supérieur (B2)</p>
+                <p>Espagnol : Intermédiaire (B1)</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Formation</h2>
+            <ul>
+                <li><strong>BUT : Réseaux et Télécommunications</strong> (09/2024 – En cours)<br>Université Jean Monnet – Roanne</li>
+                <li><strong>Baccalauréat : Général</strong> (09/2021 – 07/2024)<br>Lycée René Cassin – Mâcon – Admis</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Expérience</h2>
+            <ul>
+                <li><strong>Stagiaire commercial</strong> (12/2019 - 01/2020)<br>Médor et Compagnie - Vinzelles<br>Contribution à l'élaboration de stratégies marketing pour promouvoir les produits de l'entreprise.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projets réalisés</h2>
+            <ul>
+                <li>Développement de projet - Collaboration avec une équipe pour le développement d'un site web.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certificats et Formations</h2>
+            <ul>
+                <li>Certificat MOOC de l'ANSSI</li>
+                <li>Certificat Pix</li>
+            </ul>
+        </section>
+    </div>
+
+</body>
+</html>
+<a href="{{ asset('/media/cv.pdf') }}" class="download-button" download>Télécharger le CV</a>
+<footer class="bg-dark text-white text-center py-3">
+    <div class="d-flex justify-content-center">
+        <p>&copy; 2025 Kelis Iloduba. All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}

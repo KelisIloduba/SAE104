@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}En Savoir Plus{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .couleur{color: #F5F5F5}
+</style>
+
+<!--Contenu-->
+<head>   
+    <br>
+    <p class=couleur style="max-width: 50%; text-align: center; margin:0 auto"> <strong>Mes loisirs</strong></p>
+    <div class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Jeu Vidéo</strong></div>
+        <div class="card-body">
+          <p class="card-text">Pendant mon temps libre, j'aime me détendre en jouant à des jeux vidéo. Cela me permet de m'évader et de me divertir après une longue journée de travail ou d'études.</p>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Ecouter de la musique</strong></div>
+        <div class="card-body">
+          <p class="card-text">Dès que j'ai un peu de temps libre, que ce soit chez moi, pendant mes trajets en transport ou même lors de moments plus calmes de ma journée, j'écoute de la musique de tous les genres.</p>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Basket</strong></div>
+        <div class="card-body">
+          <p class="card-text">J’adore ce sport, il me passionne vraiment, et cela fait maintenant un an que je le pratique régulièrement.</p>
+        </div>
+    </div>
+</head>
+<footer class="bg-dark text-white text-center py-3">
+    <div class="d-flex justify-content-center">
+        <p>&copy; 2025 Kelis Iloduba. All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}
