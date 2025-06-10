@@ -1,0 +1,155 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f7fa;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .progress-section {
+        margin: 1.5rem 0;
+    }
+
+    .progress-section p {
+        margin-bottom: 0.5rem;
+        color: #495057;
+        font-weight: 500;
+    }
+
+    .progress {
+        height: 1.2rem;
+        background-color: #e9ecef;
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+
+    .progress-bar {
+        background: linear-gradient(45deg, #007bff, #00c6ff);
+        transition: width 0.6s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.875rem;
+    }
+
+    .skill-description {
+        background-color: #f8f9fa;
+        border-left: 4px solid #007bff;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0 4px 4px 0;
+    }
+
+    footer {
+        background: #343a40;
+        color: white;
+        padding: 2rem 0;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .btn-document {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-document:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        color: white;
+        text-decoration: none;
+    }
+
+    .buttons-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+</style>
+
+<!--Contenu-->
+<head>   
+    <br>
+    <bloc1 class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Presentation</strong></div>
+        <div class="card-body">
+            <h1 class="card-title">{{ nom }} {{ prenom }}</h1>
+            <h3 class="card-subtitle mb-3 text-muted">Group {{ groupe }}</h3>
+            <p>Currently in my first year of Networks and Telecommunications at the IUT of Roanne.</p>
+        </div>
+    </bloc1> 
+
+    <bloc2 class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+    <div class="card-header"><strong>Personal information</strong></div>
+    <div class="card-body">
+        <p>E-mail : kelis.iloduba@etu.univ-st-etienne.fr<br>
+           Address : 15 bis Rue de Fontenille, Roanne 42300<br>
+           Phone number : 06 95 53 88 91<br>
+           
+        <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h2>To learn more</h2>
+            </div>
+            <div class="card-body">
+                <p>Discover My Passions and Interests</p>
+                <a href="{{ path('app_loisirs') }}" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>       
+
+        </p>
+    </div>
+    </bloc2>
+</head>
+<footer class="bg-dark text-white text-center py-3">
+    <div class="d-flex justify-content-center">
+        <p>&copy; 2025 Kelis Iloduba. All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}

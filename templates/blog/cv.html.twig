@@ -1,0 +1,204 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon CV{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
+
+    .navbar {
+        background-color: #0056b3;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .navbar a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .navbar a:hover {
+        text-decoration: underline;
+    }
+
+    header {
+        text-align: center;
+        padding: 2em 0;
+        background-color: #007bff;
+        color: white;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .container {
+        width: 80%;
+        margin: 2em auto;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1em;
+    }
+
+    section {
+        margin: 1.5em 0;
+    }
+
+    h2 {
+        color: #0056b3;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 0.5rem 0;
+    }
+
+    .languages, .skills {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .download-button {
+        display: inline-block;
+        margin: 2em auto;
+        padding: 0.5em 1em;
+        background-color: #0056b3;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .download-button:hover {
+        background-color: #004494;
+    }
+
+    footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        margin-top: 2em;
+    }
+
+    footer a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<!-- Header -->
+<header>
+    <h1>Kelis Iloduba</h1>
+    <p>Étudiant en Réseaux et Télécommunications</p>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <section id="profile">
+        <h2>Coordonnées</h2>
+        <p>15 bis Rue de Fontenille, 42300, Roanne</p>
+        <p>Téléphone : 06 95 53 88 91</p>
+        <p>Email : kelis.iloduba@etu.univ-st-etienne.fr</p>
+        <p>Date de naissance : 24 avril 2006 (18 ans)</p>
+        <p>Nationalité : Français</p>
+    </section>
+
+    <section>
+        <h2>Profil</h2>
+        <p>Autonome et enthousiaste, mes premières expériences m'ont permis de renforcer mes acquis et d'appréhender les différents outils et techniques en réseaux et télécommunications. En quête de nouveaux challenges, je souhaite rejoindre une organisation à laquelle je pourrais apporter mon dynamisme et mon goût du challenge.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Esprit d'équipe</li>
+            <li>Goût du défi</li>
+            <li>Autonomie</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Centres d'intérêt</h2>
+        <ul>
+            <li>Passion pour le basket</li>
+            <li>Basket en club depuis 2 ans</li>
+            <li>Passion pour l'informatique</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Langues</h2>
+        <div class="languages">
+            <p>Anglais : Intermédiaire supérieur (B2)</p>
+            <p>Espagnol : Élémentaire (A2)</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Formation</h2>
+        <ul>
+            <li><strong>BUT : Réseaux et Télécommunications</strong> (09/2024 – En cours)<br>Université Jean Monnet – Roanne</li>
+            <li><strong>Baccalauréat : Général</strong> (09/2021 – 07/2024)<br>Lycée René Cassin – Mâcon – Admis</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Expérience</h2>
+        <ul>
+            <li><strong>Stagiaire commercial</strong> (12/2019 - 01/2020)<br>Médor et Compagnie - Vinzelles<br>Contribution à l'élaboration de stratégies marketing pour promouvoir les produits de l'entreprise.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projets réalisés</h2>
+        <ul>
+            <li>Développement de projet - Collaboration avec une équipe pour le développement d'un site web.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Certificats et Formations</h2>
+        <ul>
+            <li>Certificat MOOC de l'ANSSI</li>
+            <li>Certificat Pix</li>
+        </ul>
+    </section>
+</div>
+
+<!-- Download Button -->
+<a href="{{ asset('/media/CV.pdf') }}" class="download-button" download>Télécharger le CV</a>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Kelis Iloduba. Tous droits réservés.</p>
+</footer>
+{% endblock %}

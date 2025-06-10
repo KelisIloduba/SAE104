@@ -1,0 +1,323 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}E-Portfolio{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f7fa;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .progress-section {
+        margin: 1.5rem 0;
+    }
+
+    .progress-section p {
+        margin-bottom: 0.5rem;
+        color: #495057;
+        font-weight: 500;
+    }
+
+    .progress {
+        height: 1.2rem;
+        background-color: #e9ecef;
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+
+    .progress-bar {
+        background: linear-gradient(45deg, #007bff, #00c6ff);
+        transition: width 0.6s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.875rem;
+    }
+
+    .skill-description {
+        background-color: #f8f9fa;
+        border-left: 4px solid #007bff;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0 4px 4px 0;
+    }
+
+    footer {
+        background: #343a40;
+        color: white;
+        padding: 2rem 0;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .btn-document {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-document:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        color: white;
+        text-decoration: none;
+    }
+
+    .buttons-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+</style>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Administrer les Réseaux et l'Internet
+        </div>
+        <div class="card-body">
+            <div class="progress-section">
+    <p>Comprendre les principes et standards du codage de l'information</p>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 70%">70%</div>
+    </div>
+        <div class="skill-description" style="background-color: #e6f2ff; border-left-color: #00c6ff;">
+        <strong>Preuves :</strong> Cette preuve illustre ma compréhension des systèmes numériques et du codage de l'information à travers un montage concret. J’ai câblé un capteur DHT22 à un microcontrôleur ESP32, programmable via Arduino, pour mesurer température et humidité. Les données sont affichées sur un écran LCD I2C, montrant ainsi le fonctionnement d’un système connecté et la transmission de l’information en temps réel.
+    </div>
+    <div class="skill-description" style="background-color: #fffbe6; border-left-color: #ffc107;">
+        <strong>Analyse réflexive :</strong> Lors de cet apprentissage, j’ai conçu un montage électronique comprenant un capteur DHT22, un microcontrôleur ESP32, et un écran LCD I2C. Cela m’a permis de comprendre concrètement le fonctionnement d’un système numérique, de l’acquisition à l’affichage des données.
+
+J’ai appris à câbler et programmer un microcontrôleur avec Arduino, à interpréter les données issues d’un capteur, et à utiliser une interface de communication (I2C) pour afficher les informations. Cette expérience m’a initié aux principes du codage de l’information, à la communication entre composants, et à l’architecture des systèmes numériques.
+
+Cet apprentissage m’a permis de passer de la théorie à la pratique, de développer des compétences techniques essentielles, et de mieux comprendre les bases de l’Internet des objets (IoT).
+    </div>
+    <div class="buttons-container">
+        <a href="https://docs.google.com/document/d/1pWCdvPrlK8zjeVEnkwk7x1xGYewXe3vkFZAil6rgCDU/edit?usp=sharing" target="_blank" class="btn-document">
+            <i class="fas fa-file-alt"></i> Voir le document
+        </a>
+        <a href="https://docs.google.com/document/d/1pO_Q-5__H6G06EBjb2kZLs0Uw4FVTI5Xt1EahPWrwGU/edit?tab=t.0" target="_blank" class="btn-document">
+            <i class="fas fa-book-reader"></i> Voir l'analyse réflexive
+        </a>
+    </div>
+</div>
+
+            <div class="progress-section">
+                <p>Configurer les fonctions de base du réseau LAN</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%">90%</div>
+                </div>
+                    </div>
+        <div class="skill-description" style="background-color: #e6f2ff; border-left-color: #00c6ff;">
+        <strong>Preuves :</strong> Le document fourni illustre la mise en application concrète des normes de codage telles que UTF-8 et ISO/IEC 8859-1, ainsi que la manière dont elles facilitent la communication entre systèmes hétérogènes.
+    </div>
+    <div class="skill-description" style="background-color: #fffbe6; border-left-color: #ffc107;">
+        <strong>Analyse réflexive :</strong> Dans le cadre de l’apprentissage des fonctions de base d’un réseau local, j’ai acquis des compétences techniques concrètes en configurant un réseau complet sur Cisco Packet Tracer. J’ai appris à créer et gérer des VLANs, à configurer l’adressage IP, à utiliser Wireshark pour analyser le trafic, et à mettre en place des services essentiels comme SSH pour l’administration à distance et TFTP pour la sauvegarde des configurations.
+
+J’ai également appris à assurer la connectivité entre VLANs via le routage inter-VLAN (avec encapsulation 802.1Q), à configurer le protocole RIP pour le routage dynamique, à utiliser le NAT overload pour permettre aux postes internes d’accéder à Internet, et à mettre en œuvre des ACL pour filtrer le trafic réseau.
+
+Cette expérience m’a permis de renforcer ma compréhension du fonctionnement d’un réseau local, de développer mes capacités de dépannage, et de me préparer aux attentes du monde professionnel.
+    </div>
+                <div class="buttons-container">
+                    <a href="https://docs.google.com/document/d/1KcenxYlUNtVnnJCsoETo-zpANFMr8Psm3sB8st-mL50/edit?usp=sharing" target="_blank" class="btn-document">
+                        <i class="fas fa-file-alt"></i> Voir le document
+                    </a>
+                    <a href="https://docs.google.com/document/d/1opC6ply2RwqZSAkxDyJAPvcLKZIawsZXbr1_Ugmuzto/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-book-reader"></i> Voir l'analyse réflexive
+                    </a>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <p>Installer un poste client</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%">90%</div>
+                </div>
+    </div>
+        <div class="skill-description" style="background-color: #e6f2ff; border-left-color: #00c6ff;">
+        <strong>Preuves :</strong> Le document fourni illustre la mise en application concrète des normes de codage telles que UTF-8 et ISO/IEC 8859-1, ainsi que la manière dont elles facilitent la communication entre systèmes hétérogènes.
+    </div>
+    <div class="skill-description" style="background-color: #fffbe6; border-left-color: #ffc107;">
+        <strong>Analyse réflexive :</strong> Lors de cet apprentissage, j’ai acquis des compétences concrètes en configuration réseau de base. J’ai appris à attribuer une adresse IP statique à un poste client, à configurer un serveur DNS pour permettre l’accès à des pages web via un nom de domaine, et à adapter cette configuration selon le serveur ciblé (local ou distant).
+
+J’ai également découvert comment connecter un poste à un switch à l’aide d’un câble console, et à utiliser PuTTY pour administrer un switch, créer des VLANs, et tester la connectivité avec la commande ping.
+
+Cet apprentissage m’a permis de mieux comprendre les interactions entre les composants réseau (IP, DNS, VLAN, console) et de développer des compétences pratiques essentielles pour le métier de technicien ou d’administrateur réseau.
+    </div>
+                <div class="buttons-container">
+                    <a href="https://docs.google.com/document/d/1MiEs6sG6SsR6UAq5QX-ijoDve7gW79Ht2E1S9NVp0RI/edit?usp=sharing" target="_blank" class="btn-document">
+                        <i class="fas fa-file-alt"></i> Voir le document
+                    </a>
+                                        <a href="https://docs.google.com/document/d/11zM1rp6KqPE-Y46K7-KiFyM7c0EQ5VdTmv7CWD1ohY4/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-book-reader"></i> Voir l'analyse réflexive
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="card">
+        <div class="card-header">
+            Connecter les Entreprises et les Usagers
+        </div>
+        <div class="card-body">
+            <div class="progress-section">
+                <p>Déployer des supports de transmission</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%">70%</div>
+                </div>
+    </div>
+        <div class="skill-description" style="background-color: #e6f2ff; border-left-color: #00c6ff;">
+        <strong>Preuves :</strong> Le document fourni illustre la mise en application concrète des normes de codage telles que UTF-8 et ISO/IEC 8859-1, ainsi que la manière dont elles facilitent la communication entre systèmes hétérogènes.
+    </div>
+    <div class="skill-description" style="background-color: #fffbe6; border-left-color: #ffc107;">
+        <strong>Analyse réflexive :</strong> Dans cette activité, j’ai appris à configurer un réseau local (LAN) structuré dans Cisco Packet Tracer. J’ai relié un PC à un switch via un câble console pour accéder à l’interface de configuration. J’ai mis en place des VLANs pour segmenter logiquement le réseau et observé que des PC situés dans des VLANs différents ne pouvaient pas communiquer entre eux sans l’usage d’un port trunk.
+
+J’ai également découvert l’importance de relier les switches via des ports GigabitEthernet (Gig0/1) pour bénéficier d’un débit plus élevé (1000 Mbps) par rapport aux ports FastEthernet (100 Mbps), ce qui est essentiel pour optimiser les performances entre équipements.
+
+Cet apprentissage m’a permis de mieux comprendre la logique de segmentation réseau, l’importance des trunks pour la communication inter-VLAN et l’impact des débits des interfaces sur le fonctionnement global d’un réseau.
+
+
+    </div>
+                                <div class="buttons-container">
+                    <a href="https://docs.google.com/document/d/1y5L_za7AWZRWdteZ_BzKBG8caMqtTGw0uBgckWWbpbg/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-file-alt"></i> Voir le document
+                    </a>
+                                        <a href="https://docs.google.com/document/d/1d7ZemZCggjC_y2K0QDpas7kXEsGq-ilA_tysbapK_7c/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-book-reader"></i> Voir l'analyse réflexive
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            Créer des Outils et Applications Informatiques pour les Réseaux & Télécommunication
+        </div>
+        <div class="card-body">
+            <div class="progress-section">
+                <p>Utilisation d'un système informatique et de ses outils</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%">90%</div>
+                </div>
+    </div>
+        <div class="skill-description" style="background-color: #e6f2ff; border-left-color: #00c6ff;">
+        <strong>Preuves :</strong> Le document fourni illustre la mise en application concrète des normes de codage telles que UTF-8 et ISO/IEC 8859-1, ainsi que la manière dont elles facilitent la communication entre systèmes hétérogènes.
+    </div>
+    <div class="skill-description" style="background-color: #fffbe6; border-left-color: #ffc107;">
+        <strong>Analyse réflexive :</strong> Avant cette activité, j’utilisais des outils informatiques sans bien comprendre leurs spécificités ni comment les adapter à chaque contexte. Pendant l'apprentissage, j'ai appris à mieux choisir mes outils en fonction des besoins du projet. J'ai utilisé EduPython pour des scripts Python simples, Visual Studio Code pour des projets plus complexes en C, JavaScript, HTML, et CSS, et PuTTY pour configurer des équipements réseau, notamment pour filtrer le trafic avec des ACL.
+
+Après cet apprentissage, je me sens plus à l’aise pour choisir et utiliser les bons outils selon le langage ou le type de projet. Cela m’a permis de développer une plus grande polyvalence, indispensable pour m’adapter à des projets techniques variés.
+
+Cet apprentissage est important car il me prépare à travailler efficacement avec différents langages et outils, tout en comprenant l’importance de l’environnement de développement et des outils de configuration dans le développement logiciel et l’administration réseau.
+    </div>
+                                <div class="buttons-container">
+                    <a href="https://docs.google.com/document/d/1S1CYAlJrsa1AL681dF1Wwjx780n9p5UFGie6_w1c06k/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-file-alt"></i> Voir le document
+                    </a>
+                                        <a href="https://docs.google.com/document/d/1611GzzMCcASqFCyAPxfD6wjBM71-qZYnBO38jWHJZaM/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-book-reader"></i> Voir l'analyse réflexive
+                    </a>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <p>Programmer, lire, corriger un programme</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%">90%</div>
+                </div>
+    </div>
+        <div class="skill-description" style="background-color: #e6f2ff; border-left-color: #00c6ff;">
+        <strong>Preuves :</strong> Le document fourni illustre la mise en application concrète des normes de codage telles que UTF-8 et ISO/IEC 8859-1, ainsi que la manière dont elles facilitent la communication entre systèmes hétérogènes.
+    </div>
+    <div class="skill-description" style="background-color: #fffbe6; border-left-color: #ffc107;">
+        <strong>Analyse réflexive :</strong> Cette analyse m'a permis de mieux comprendre la structuration d'un programme complexe en Python, notamment l'utilisation des conditions imbriquées pour déterminer un tarif d'envoi en fonction du poids et du délai. Avant l'analyse, j'avais une connaissance générale du langage, mais je n'avais pas saisi pleinement la gestion de logiques complexes avec des conditions multiples.
+
+En étudiant le programme, j'ai appris à organiser les différentes étapes logiques à travers des SI imbriqués et à gérer des scénarios variés, comme les différentes options de délai et de poids. Ce programme montre aussi l'importance de gérer les erreurs et de retourner des messages clairs en cas de valeurs invalides.
+
+Cet exercice a renforcé mes compétences en gestion des conditions et m'a permis de mieux comprendre comment structurer des algorithmes complexes. Je me sens désormais plus à l'aise pour écrire des programmes avec des logiques plus élaborées et interconnectées.
+    </div>
+                                <div class="buttons-container">
+                    <a href="https://docs.google.com/document/d/1u1ffHd3EU_a01tYt3dzyRavwI4B1SiD83S9D_sIZgzc/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-file-alt"></i> Voir le document
+                    </a>
+                                        <a href="https://docs.google.com/document/d/1Q2oJgv5ULdWEEdmiMoGwNBk2vILJgYAjf1m1Mhm7XVM/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-book-reader"></i> Voir l'analyse réflexive
+                    </a>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <p>Connaître l'architecture et les technologies d'un site Web</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%">70%</div>
+                </div>
+    </div>
+        <div class="skill-description" style="background-color: #e6f2ff; border-left-color: #00c6ff;">
+        <strong>Preuves :</strong> Le document fourni illustre la mise en application concrète des normes de codage telles que UTF-8 et ISO/IEC 8859-1, ainsi que la manière dont elles facilitent la communication entre systèmes hétérogènes.
+    </div>
+    <div class="skill-description" style="background-color: #fffbe6; border-left-color: #ffc107;">
+        <strong>Analyse réflexive :</strong> Cet apprentissage m'a permis d'acquérir une meilleure compréhension de l'architecture d'un site web dynamique en utilisant Symfony et de découvrir comment améliorer l'esthétique et la réactivité du site avec Bootstrap. Symfony m’a offert un cadre solide pour organiser le projet en suivant l'architecture MVC (Modèle-Vue-Contrôleur), ce qui m’a permis de structurer efficacement le code et de séparer la logique de l'affichage, facilitant ainsi la gestion du back-end.
+
+L'intégration de Bootstrap a été un élément clé pour rendre le site plus esthétique et responsive. Grâce à ses classes CSS prédéfinies, j'ai pu créer rapidement des composants comme la navbar (barre de navigation) et le footer, améliorant ainsi l'expérience utilisateur. Bootstrap m’a aussi permis de rendre le site compatible avec différents types d'écrans, en veillant à ce qu'il soit fonctionnel et bien affiché sur mobile comme sur desktop.
+
+Cet apprentissage m'a également sensibilisé à l'importance de l’ergonomie et de la présentation dans le développement d'un site web. Non seulement il faut se concentrer sur la logique et les fonctionnalités du site, mais il est également crucial de garantir une navigation fluide et un design adapté. En combinant Symfony pour la gestion de la logique back-end et Bootstrap pour la présentation front-end, j’ai acquis une approche plus complète et moderne du développement web, me permettant désormais de créer des sites modulaires, esthétiques et performants.
+    </div>
+                                <div class="buttons-container">
+                    <a href="https://docs.google.com/document/d/1Q8pWpdHDOSoLGADbMabcKe100EhVMk-YpMrwyYPealg/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-file-alt"></i> Voir le document
+                    </a>
+                                        <a href="https://docs.google.com/document/d/1yeGu8lmwBUhk0g1CS95t-cCqg1TotZFInRKHcksXHx0/edit?tab=t.0" target="_blank" class="btn-document">
+                        <i class="fas fa-book-reader"></i> Voir l'analyse réflexive
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Kelis Iloduba. Tous droits réservés.</p>
+</footer>
+{% endblock %}

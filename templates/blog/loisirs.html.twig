@@ -1,0 +1,142 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}En Savoir Plus{% endblock %}
+
+{% block body %}
+<style>
+body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f7fa;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 2rem;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-header {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 1.5rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .progress-section {
+        margin: 1.5rem 0;
+    }
+
+    .progress-section p {
+        margin-bottom: 0.5rem;
+        color: #495057;
+        font-weight: 500;
+    }
+
+    .progress {
+        height: 1.2rem;
+        background-color: #e9ecef;
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 1rem;
+    }
+
+    .progress-bar {
+        background: linear-gradient(45deg, #007bff, #00c6ff);
+        transition: width 0.6s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 0.875rem;
+    }
+
+    .skill-description {
+        background-color: #f8f9fa;
+        border-left: 4px solid #007bff;
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 0 4px 4px 0;
+    }
+
+    footer {
+        background: #343a40;
+        color: white;
+        padding: 2rem 0;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .btn-document {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-document:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        color: white;
+        text-decoration: none;
+    }
+
+    .buttons-container {
+        display: flex;
+        gap: 1rem;
+        margin-top: 1rem;
+        justify-content: flex-start;
+    }
+</style>
+
+<!--Contenu-->
+<head>   
+    <br>
+    <p class=couleur style="max-width: 50%; text-align: center; margin:0 auto"> <strong>Mes loisirs</strong></p>
+    <div class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Jeu Vidéo</strong></div>
+        <div class="card-body">
+          <p class="card-text">Pendant mon temps libre, j'aime me détendre en jouant à des jeux vidéo. Cela me permet de m'évader et de me divertir après une longue journée de travail ou d'études.</p>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Ecouter de la musique</strong></div>
+        <div class="card-body">
+          <p class="card-text">Dès que j'ai un peu de temps libre, que ce soit chez moi, pendant mes trajets en transport ou même lors de moments plus calmes de ma journée, j'écoute de la musique de tous les genres.</p>
+        </div>
+    </div>
+    <div class="card text-white bg-primary mb-3" style="max-width: 50%; text-align: center; margin:0 auto">
+        <div class="card-header"><strong>Basket</strong></div>
+        <div class="card-body">
+          <p class="card-text">J’adore ce sport, il me passionne vraiment, et cela fait maintenant un an que je le pratique régulièrement.</p>
+        </div>
+    </div>
+</head>
+<footer class="bg-dark text-white text-center py-3">
+    <div class="d-flex justify-content-center">
+        <p>&copy; 2025 Kelis Iloduba. All rights reserved.</p>
+    </div>
+</footer>
+{% endblock %}
